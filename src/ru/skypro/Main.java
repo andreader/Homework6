@@ -10,8 +10,12 @@ public class Main {
         String middleName = "Ivanov";
         String lastName = "Ivanovich";
         String fullName = middleName + " " + firstName + " " + lastName;
-        String fullNameForTheReport = fullName.toUpperCase();
-        System.out.println("Full name for the report - " + fullNameForTheReport);
+        String fullNameForTheAdminsDepartment = middleName + ";" + firstName + ";" + lastName;;
+        System.out.println("Full name for the administrative department - " + fullNameForTheAdminsDepartment);
+        String fullName2 = "Ivanov Ivan Ivanovich";
+        String fullNameForTheAdminsDepartment2 = fullName2.replace(" ", ";");
+        System.out.println("Full name for the administrative department (version2) - " + fullNameForTheAdminsDepartment2);
+
     }
     }
 
