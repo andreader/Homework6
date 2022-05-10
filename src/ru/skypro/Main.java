@@ -1,5 +1,7 @@
 package ru.skypro;
 
+import java.util.Locale;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -8,16 +10,9 @@ public class Main {
         String middleName = "Ivanov";
         String lastName = "Ivanovich";
         String fullName = middleName + " " + firstName + " " + lastName;
-        if (firstName.isEmpty() || firstName.isBlank()) {
-            System.out.println("Enter the first name.");
-        } else if (middleName.isEmpty() || middleName.isBlank()) {
-            System.out.println("Enter the middle name.");
-        } else if (lastName.isEmpty() || lastName.isBlank()) {
-            System.out.println("Enter the last name.");
-        }
-        else {
-            System.out.println("fullName = " + fullName);
-        }
+        String fullNameForTheReport = fullName.toUpperCase();
+        System.out.println("Full name for the report - " + fullNameForTheReport);
     }
-}
+    }
+
 
